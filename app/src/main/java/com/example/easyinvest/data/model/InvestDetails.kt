@@ -19,6 +19,8 @@ import java.util.*
 
 
 data class InvestDetails (
+        val valorLiquidoLucro : Double,
+
         val valorInvestido : Double,
         val valorBrutoInvestimento : Double,
         val valorDoRendimento : Double,
@@ -27,7 +29,7 @@ data class InvestDetails (
         val dataResgate: Date,
         val diasCorridos : Int,
         val rendimendoMensal: Double,
-        val percentualCDI : Double,
+        val percentualCDI : Int,
         val rentabilidadeAnual: Double,
         val rentabilidadeNoPeriodo : Double,
 )

@@ -6,7 +6,7 @@ import retrofit2.converter.moshi.MoshiConverterFactory
 object RetrofitBuilder{
     private fun initRetrofit(): Retrofit{
         return Retrofit.Builder()
-            .baseUrl("")
+            .baseUrl("https://api-simulator-calc.easynvest.com.br/calculator/")
             .addConverterFactory(MoshiConverterFactory.create())
             .build()
     }

@@ -25,7 +25,7 @@ data class InvestimentParameterResponse (
     val valorAplicado : Double,
 
     @Json(name = "rate")
-    val percentualCDI : Double,
+    val percentualCDI : Int,
 
     @Json(name = "maturityTotalDays")
     val diasCorridos : Int,

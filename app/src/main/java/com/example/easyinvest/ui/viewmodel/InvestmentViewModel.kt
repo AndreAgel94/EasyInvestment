@@ -9,7 +9,7 @@ class InvestmentViewModel (
     private val repository: InvestmentRepository
 ) : ViewModel(){
 
-    fun buscaIvestment() : LiveData<InvestDetails>{
+    fun buscaIvestment() : LiveData<InvestDetails?>{
         return repository.buscaInvestment()
     }
 }

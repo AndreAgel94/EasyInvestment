@@ -20,6 +20,8 @@ import com.squareup.moshi.JsonClass
 
 data class InvestmentBodyResponse (
 
+    @Json(name = "investmentParameter")
+    val investmentParameter : InvestimentParameterResponse,
 
     @Json(name = "netAmountProfit")
     val valorLiquidoLucro : Double,

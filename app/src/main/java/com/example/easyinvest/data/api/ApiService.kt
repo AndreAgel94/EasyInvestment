@@ -17,10 +17,10 @@ interface ApiService {
 
     @GET("simulate")
     fun getInvestment(
-        @Query("investedAmount") investedAmount : Double,
+        @Query("investedAmount") investedAmount : Double?,
         @Query("index") index : String = "CDI",
-        @Query("rate") rate : Double,
-        @Query("isTaxFree") isTaxFree : Boolean = false,
-        @Query("maturityDate") maturityDate : Date
+        @Query("rate") rate : Int,
+        @Query("isTaxFree") isTaxFree : Boolean? = false,
+        @Query("maturityDate") maturityDate : Date?
     ) : Call<InvestmentBodyResponse>
 }
