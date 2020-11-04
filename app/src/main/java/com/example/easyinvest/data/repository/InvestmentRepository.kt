@@ -21,9 +21,10 @@ class InvestmentRepository {
                 call: Call<InvestmentBodyResponse>,
                 response: Response<InvestmentBodyResponse>
             ) {
+                var investment : InvestDetails
                 if(response.isSuccessful){
                     response.body()?.let {
-                        val investDetails = InvestDetails(
+                    investmentLiveData.value = InvestDetails(
                             it.valorLiquidoLucro, it.investmentParameter.valorAplicado , it.valorBrutoInvestido , it.valorLiquidoLucro ,
                             it.valorLiquidoInvestimento , it.irSobreInvestimento , it.investmentParameter.dataResgate ,
                             it.investmentParameter.diasCorridos , it.rendimentoMensal , it.investmentParameter.percentualCDI,
@@ -31,9 +32,7 @@ class InvestmentRepository {
                         )
 
                     }
-
                 }
-
             }
 
             override fun onFailure(call: Call<InvestmentBodyResponse>, t: Throwable) {
