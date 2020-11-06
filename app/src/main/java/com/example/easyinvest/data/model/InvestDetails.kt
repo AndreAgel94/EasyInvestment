@@ -26,7 +26,7 @@ data class InvestDetails (
         val valorDoRendimento : Double,
         val valorLiquidoInvestimento: Double,
         val irSobreInvestimento : Double,
-        val dataResgate: Date,
+        val dataResgate: String,
         val diasCorridos : Int,
         val rendimendoMensal: Double,
         val percentualCDI : Int,

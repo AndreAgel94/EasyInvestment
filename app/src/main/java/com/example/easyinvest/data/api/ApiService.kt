@@ -4,7 +4,6 @@ import com.example.easyinvest.data.response.InvestmentBodyResponse
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Query
-import java.util.*
 
 interface ApiService {
 
@@ -17,10 +16,10 @@ interface ApiService {
 
     @GET("simulate")
     fun getInvestment(
-        @Query("investedAmount") investedAmount : Double = 1000.0,
-        @Query("index") index : String = "CDI",
-        @Query("rate") rate : Int = 123,
-        @Query("isTaxFree") isTaxFree : Boolean = false,
-        @Query("maturityDate") maturityDate : String = "2023-03-03"
+        @Query("investedAmount") investedAmount : Double,
+        @Query("index") index : String,
+        @Query("rate") rate : Int,
+        @Query("isTaxFree") isTaxFree : Boolean,
+        @Query("maturityDate") maturityDate : String
     ) : Call<InvestmentBodyResponse>
 }

@@ -1,7 +1,9 @@
 package com.example.easyinvest.data.response
 
+import android.os.Parcelable
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
+import kotlinx.android.parcel.Parcelize
 import java.util.*
 
 //"netAmountProfit": 329.93
@@ -19,17 +21,13 @@ import java.util.*
 //"annualNetRateProfit": 32.99
 //"annualGrossRateProfit": 38.82,
 
-
+@Parcelize
 data class InvestimentParameterResponse (
-    @Json(name = "investedAmount")
-    val valorAplicado : Double,
+    val investedAmount : Double,
 
-    @Json(name = "rate")
-    val percentualCDI : Int,
+    val rate : Int,
 
-    @Json(name = "maturityTotalDays")
-    val diasCorridos : Int,
+    val maturityTotalDays : Int,
 
-    @Json(name = "maturityDate")
-    val dataResgate : Date,
-)
+    val maturityDate : String,
+) : Parcelable

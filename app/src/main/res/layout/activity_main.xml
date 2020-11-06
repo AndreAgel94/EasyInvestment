@@ -10,60 +10,62 @@
         android:id="@+id/textDiasCorridosResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textRendimentoMensalResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textRendimentoMensalResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textCDIResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textCDIResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textRentabilidadeAnualResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textRentabilidadeAnualResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textRentabilidadePeriodoResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textRentabilidadePeriodoResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:text="TextView"
-        app:layout_constraintBottom_toTopOf="@+id/botaoSimular"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintBottom_toTopOf="@+id/buttonSimularNovamente"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <Button
-        android:id="@+id/botaoSimular"
+        android:id="@+id/buttonSimularNovamente"
+        android:textAllCaps="false"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="32dp"
-        android:text="Simular novamente"
+        android:text="@string/Simular_novamente"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -74,7 +76,7 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="20dp"
         android:layout_marginBottom="16dp"
-        android:text="Resultado da simulação"
+        android:text="@string/Resultado_Da_simulação"
         android:textSize="14sp"
         app:layout_constraintBottom_toTopOf="@+id/textFinalResult"
         app:layout_constraintEnd_toEndOf="parent"
@@ -86,19 +88,20 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
-        android:text="R$ 1.088,69"
         android:textColor="@android:color/black"
         android:textSize="36sp"
         app:layout_constraintBottom_toTopOf="@+id/textView3"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        tools:text="@string/ResultadoEstatico" />
 
     <TextView
         android:id="@+id/textView3"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
         android:layout_marginBottom="44dp"
-        android:text="Rendimento total de "
+        android:text="@string/Rendimento_total_de"
         app:layout_constraintBottom_toTopOf="@+id/textValorAplicado"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -107,7 +110,7 @@
         android:id="@+id/textValorAplicado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
         android:text="Valor aplicado inicialmente"
         app:layout_constraintBottom_toTopOf="@+id/textValorBruto"
@@ -117,9 +120,9 @@
         android:id="@+id/textValorBruto"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Valor bruto do investimento"
+        android:text="@string/Valor_Bruto_do_investimento"
         app:layout_constraintBottom_toTopOf="@+id/textValorRendimento"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -127,9 +130,9 @@
         android:id="@+id/textValorRendimento"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Valor rendimento"
+        android:text="@string/Valor_do_rendimento"
         app:layout_constraintBottom_toTopOf="@+id/textIR"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -137,9 +140,9 @@
         android:id="@+id/textIR"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="IR sobre o investimento"
+        android:text="@string/IR_sobre_o_investimento"
         app:layout_constraintBottom_toTopOf="@+id/textValorLiquido"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -147,9 +150,9 @@
         android:id="@+id/textValorLiquido"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="46dp"
-        android:text="Valor líquido do investimento"
+        android:text="@string/Valor_líquido_do_investimento"
         app:layout_constraintBottom_toTopOf="@+id/textDataDeResgate"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -157,9 +160,9 @@
         android:id="@+id/textDataDeResgate"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Data de resgate"
+        android:text="@string/Data_Resate"
         app:layout_constraintBottom_toTopOf="@+id/textDiasCorridos"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -167,9 +170,9 @@
         android:id="@+id/textDiasCorridos"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Data corridos"
+        android:text="@string/Dias_corridos"
         app:layout_constraintBottom_toTopOf="@+id/textRendimentoMensal"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -177,9 +180,9 @@
         android:id="@+id/textRendimentoMensal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Rendimento mensal"
+        android:text="@string/Rendimento_Mensal"
         app:layout_constraintBottom_toTopOf="@+id/textCDI"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -187,9 +190,9 @@
         android:id="@+id/textCDI"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Percentual do CDI do investimento"
+        android:text="@string/Percentual_do_cdi_investimento"
         app:layout_constraintBottom_toTopOf="@+id/textRentabilidadeAnual"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -197,9 +200,9 @@
         android:id="@+id/textRentabilidadeAnual"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="16dp"
-        android:text="Rentabilidade anual"
+        android:text="@string/Rentabilidade_Anual"
         app:layout_constraintBottom_toTopOf="@+id/textRentabilidadePeriodo"
         app:layout_constraintStart_toStartOf="parent" />
 
@@ -207,70 +210,81 @@
         android:id="@+id/textRentabilidadePeriodo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="32dp"
         android:layout_marginBottom="32dp"
-        android:text="Rentabilidade no período"
-        app:layout_constraintBottom_toTopOf="@+id/botaoSimular"
+        android:text="@string/Rentabilidade_no_período"
+        app:layout_constraintBottom_toTopOf="@+id/buttonSimularNovamente"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
         android:id="@+id/textValorAplicadoResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textValorBrutoResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textValorBrutoResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textValorRendimentoResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textValorRendimentoResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textIRresultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textIRresultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textValorLiquidoResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textValorLiquidoResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="46dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textDataDeResgateResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
 
     <TextView
         android:id="@+id/textDataDeResgateResultado"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="32dp"
         android:layout_marginBottom="16dp"
-        android:text="TextView"
         app:layout_constraintBottom_toTopOf="@+id/textDiasCorridosResultado"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:text="TextView" />
+
+    <TextView
+        android:id="@+id/textLucroLiquido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="16dp"
+        android:textColor="@color/BlueGreen"
+        app:layout_constraintStart_toEndOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textFinalResult"
+        tools:text="TextView" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
