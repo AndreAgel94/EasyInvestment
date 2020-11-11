@@ -33,11 +33,11 @@ class InvestimentActivity : AppCompatActivity() {
             val intent = InvestorActivity.getStartIntent(this)
             this.startActivity(intent)
         }
-        fetchInvestmentCoroutines(valorAplicado,dataEncerramento,cdi)
+        fetchInvestment(valorAplicado,dataEncerramento,cdi)
     }
 
 
-    private fun fetchInvestmentCoroutines(valorAplicado: Double, dataEncerramento: String, cdi: Int) {
+    private fun fetchInvestment(valorAplicado: Double, dataEncerramento: String, cdi: Int) {
 
         viewModel.buscaInvestmentCoroutines3(valorAplicado,dataEncerramento,cdi)
                 .observe(this, Observer {
